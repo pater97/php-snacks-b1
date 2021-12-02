@@ -60,6 +60,8 @@ $drangonball=[
         ]
     ],
 ];
+
+
 #for
 for($i=0;$i < count($drangonball);$i++){
     // #calcolo meida
