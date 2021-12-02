@@ -7,6 +7,11 @@ $email= $_GET['email'];
 $name= $_GET['name'];
 $age= $_GET['age'];
 
+if(strlen($name) > 3 && strops($email,'@') && strpos($email, '.') && is_int(age)){
+    $result = 'accesso consentito';
+} elseif {
+    $result = 'accesso negato';
+};
 ?>
 
 <!DOCTYPE html>
