@@ -7,11 +7,27 @@ $email= $_GET['email'];
 $name= $_GET['name'];
 $age= $_GET['age'];
 
-if(strlen($name) > 3 && strops($email,'@') && strpos($email, '.') && is_int(age)){
-    $result = 'accesso consentito';
-} elseif {
-    $result = 'accesso negato';
+var_dump($email,$name,$age);
+
+if(strlen($name) > 3){
+    $nameConfirm = true;
 };
+if(is_numeric(age)){
+    $ageConfirm= true;
+};
+if(strpos($email,'@')){
+    $emailConfirm= true;
+};
+var_dump($nameConfirm,$ageConfirm,$emailConfirm);
+
+if($nameConfirm && $ageConfirm && $emailConfirm){
+    $result = 'accesso consentito';
+};
+// if(strlen($name) > 3 && strops($email,'@') && strpos($email, '.') && is_int(age)){
+//     $result = 'accesso consentito';
+// } else {
+//     $result = 'accesso negato';
+// };
 ?>
 
 <!DOCTYPE html>
