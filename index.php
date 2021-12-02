@@ -43,10 +43,13 @@ $dieciDicembre = [
         "puntiOspite" => 60
     ],
 ];
-var_dump($dieciDicembre[0][squadraCasa]);
+
 
 for($i = 0 ;$i < count($dieciDicembre);$i++){
     echo $dieciDicembre[$i][squadraCasa];
+    echo $dieciDicembre[$i][squadraOspite];
+    echo $dieciDicembre[$i][puntiCasa];
+    echo $dieciDicembre[$i][puntiOspite];
 };
 
 
