@@ -35,11 +35,14 @@ $ads = [
 
 $random=rand(0,4);
 if($ads[$random]['is_active']){
+    echo '<div>';
     echo '<img src="' . $ads[$random]['image_path'] .'" alt="">';
     echo $ads[$random]['link'];
+    echo '</div>';
 }else{
     echo 'non disponibile';
 }
 
 ?>
+
 
